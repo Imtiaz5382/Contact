@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family:NotoSerif-Italic-VariableFont_wdth\,wght;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+ a{
+   text-decoration: none;
+ }
+ @font-face {
+    src: url(Fonts/Noto_Serif/NotoSerif-Italic-VariableFont_wdth\,wght.ttf);
+    font-family:NotoSerif-Italic-VariableFont_wdth\,wght ;
+}
+body{
+    background-color: #C9E7E8;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.container{
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.container .data{
+    display: grid;
+    grid-template-columns: 0.30fr 0.70fr;
+}
+.container .data  .section-01{
+    padding:50px 50px 20px 50px;
+}
+.container .data  .section-01 #sec-01{
+    margin-bottom: 20.1px;
+}
+.container .data  .section-01 #sec-01 i{
+    color: #351D7F;
+    margin-bottom: 9px;
+    font-size: 26px;
+    margin-left: 10px;  
+}
+.container .data  .section-01 #sec-01 h4 {
+    font-weight: 700;
+}
+.container .data  .section-01 #sec-01 h5{
+    font-weight: 400;
+}
+.container .data  .section-02 .sec-data h4{
+    color: #351D7F;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+.container .data  .section-02 .sec-data {
+    margin-top: 50px;
+}
+.container .data  .section-02 .sec-data p{
+    font-weight: 400;
+    font-size: 14px;
+}
+.container .data  .section-02 form{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+.container .data  .section-02 form .row{
+  padding-right: 100px;
+}
+.container .data  .section-02 form input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    background-color:#F0F1F8;
+    padding-left: 14px;
+    padding-top: -10px;
+    position: relative;
+}
+
+.container .data  .section-02 form .messege{
+    height: 95px;
+}
+.container .data  .section-02 form button{
+    border:1px solid #351D7F;
+    outline: none;
+    cursor: pointer;
+    background-color: #351D7F;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius:3px;
+    font-size: 1.05em;
+}
+.container .data  .section-02 form  button:hover{
+    background-color: rgb(46, 42, 42);
+    transition: all 0.3s ease-in;
+}
+@media screen and (max-width:1190px) {
+    .container .data  .section-02 form .row{
+        padding-right: 0px;
+      }
+    .container .data  .section-02 form input{
+        width: 110%;
+        height: 30px;
+    }
+    .container .data  .section-02 form .messege{
+            height: 50px;
+    }
+}
+@media screen and (max-width:600px) and (min-width:380px) {
+    .container .data{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container .data .sec-data{
+        margin-left: 14px;
+        margin-right: 10px;
+    }
+    .container .data  .section-02 form input{
+        width: 90%;
+        height: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .container .data  .section-02 form .messege{
+            height: 60px;
+    }
+    .container .data  .section-02 form  button{
+        margin-left: 10px;
+    }
+    
+}
