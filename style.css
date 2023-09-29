@@ -126,7 +126,7 @@ body{
             height: 50px;
     }
 }
-@media screen and (max-width:600px) and (min-width:380px) {
+@media screen and (max-width:600px) and (min-width:330px) {
     .container .data{
         display: flex;
         flex-direction: column-reverse;
